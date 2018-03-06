@@ -14,6 +14,6 @@ Information to get to know shibboleth system better
   <li> Go to <code>/etc/httpd/conf/httpd.conf</code> and add <code>UseCanonicalName On
     ServerName web.server:80</code></li>
   <li>Check if <code>/etc/httpd/conf.d/ssl.conf</code> exists. If not, run <code>yum install mod_ssl</code></li>
-<li></li>
-<li></li>
+  <li>Let's make SP alive, run <code>systemctl start shibd</code> and <code>systemctl start httpd</code></li>
+  <li>Try accessing it on <code>web.server/Shibboleth.sso/Status</code></li>
 </ul>
